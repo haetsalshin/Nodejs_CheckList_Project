@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  link(rel="stylesheet",href="/stylesheets/todo_main.css")
+  script(src="/javascripts/check_main.js")
+ 
+  section.todo_main
+    h1 💕 My Check List 💕
+    form(method="POST")
+      input(type="text",name="todo",id="todo",placeholder="오늘 해야 할 일")
+      button(type="button",id="btn-save") 저장
+
+      article.todo_list
+        ul
+          li
+            .input-form
+              input(name="box-chk", id="checkbox", type="checkbox", value="5")
+              p(id="contents") 오늘 할일을 관리해보자
+              p(id="date_time") #{date} #{time}
+            button(type="button", id="btn-update") 수정
+            button(type="button", id="btn-delete") 삭제

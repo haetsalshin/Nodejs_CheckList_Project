@@ -1,0 +1,91 @@
+section.todo_main {
+  border: 3px solid brown;
+  width: 50%;
+  margin: 30px auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+section.todo_main h1 {
+  margin: 0 auto;
+  background-color: rgb(250, 189, 165);
+  text-align: center;
+  padding: 2rem;
+}
+
+section.todo_main form {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+section.todo_main form input {
+  display: inline-block;
+  flex: 5;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+section.todo_main form button {
+  flex: 1;
+  background-color: navajowhite;
+  padding: 5px 12px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+section.todo_main form button:hover {
+  background-color: red;
+  color: white;
+}
+
+article.todo_list {
+  border: 1px solid #aaa;
+  width: 95%;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+article.todo_list ul li {
+  width: 93%;
+  padding: 8px;
+  border-bottom: 1px solid red;
+}
+
+/* --------------------------------수정 요망 */
+article.todo_list ul li .input-form button {
+  width: 10%;
+  background-color: lightsalmon;
+  color: ghostwhite;
+  padding: 2px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: border;
+  border: 2px solid transparent;
+}
+
+article.todo_list ul li .input-form button:hover {
+  border: 2px solid lightsalmon;
+  background-color: ghostwhite;
+  color: lightsalmon;
+  font-weight: border;
+}
+
+article.todo_list ul li .input-form p#contents {
+  display: inline-block;
+  margin: 10px;
+  width: 65%;
+  border-bottom: 1px solid salmon;
+}
+article.todo_list ul li .input-form p#date_time {
+  border: 1px solid salmon;
+  display: inline;
+  margin-right: 100px;
+  text-align: right;
+}
